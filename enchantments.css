@@ -3,11 +3,18 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL1MQwaQetVlHM1Wrxk8JVKBX2EC-OkMMo-A&s') no-repeat center center fixed;
-  background-size: cover;
+  font-family: 'Wendy One', sans-serif;
+  background: black;
   color: white;
 }
+
+#stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
 
 h1, h2, h3 {
   font-family: 'Wendy One', sans-serif;
@@ -259,6 +266,25 @@ footer a:hover {
 @keyframes auraPulse {
   from { box-shadow: 0 0 10px #9400D3, 0 0 20px #b300ff; }
   to { box-shadow: 0 0 20px #b300ff, 0 0 40px #9400D3; }
+}
+/* === Starry Background === */
+body {
+  background: black;
+  overflow: hidden; /* prevents scrollbars from stars */
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 2s infinite alternate;
+}
+
+@keyframes twinkle {
+  from { opacity: 0.2; }
+  to { opacity: 1; }
 }
 
 
