@@ -124,4 +124,42 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+
+  // --- Video Comments ---
+  const videoSlots = document.querySelectorAll(".video-slot");
+  videoSlots.forEach((slot, index) => {
+    const form = slot.querySelector("form");
+    const list = slot.querySelector(".comment-list");
+    const clearBtn = slot.querySelector(".clear-btn");
+
+    if (form && list) {
+      const key = `videoComments${index}`;
+      const savedVideoComments = JSON.parse(localStorage.getItem(key)) || [];
+      savedVideoComments.forEach(c => createItemElement(c, list, key, savedVideoComments));
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const textarea = form.querySelector("textarea");
+        if (textarea.value.trim() !== "") {
+          const newComment = textarea.value.trim();
+          savedVideoComments.push(newComment);
+          localStorage.setItem(key, JSON.stringify(savedVideoComments));
+          createItemElement(newComment, list, key, savedVideoComments);
+          textarea.value = "";
+        }
+      });
+
+      // Clear All Comments button
+      if (clearBtn) {
+        clearBtn.addEventListener("click", () => {
+          showConfirmModal(() => {
+            list.innerHTML = "<p>No comments yet. Be the first!</p>";
+            localStorage.removeItem(key);
+            savedVideoComments.length = 0; // reset array
+          });
+        });
+      }
+    }
+  });
 });
+
