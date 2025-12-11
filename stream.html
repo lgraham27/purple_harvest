@@ -4,46 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stream - Purple Harvest</title>
+  <link rel="stylesheet" href="enchantments.css">
 </head>
 <body>
-  <!-- Page Header -->
   <header>
     <h1>CRYSTAL VISIONS</h1>
     <h3>Use the crystal ball to see the past and present tales of SpectoG27, the crystal ball lacks enchantments of foresight sadly so you cannot see the future.</h3>
   </header>
 
-  <!-- Stream Player -->
   <main>
     <section id="stream-player">
       <h2>Live Stream</h2>
-      <!-- Twitch embed for current or most recent stream -->
       <iframe
         src="https://player.twitch.tv/?channel=spectog27&parent=localhost"
         frameborder="0"
-        allowfullscreen="true"
+        allowfullscreen
         scrolling="no"
         height="378"
-        width="620">
+        width="620"
+        title="SpectoG27 Twitch Stream">
       </iframe>
     </section>
 
-    <!-- Comment Section -->
     <section id="comments">
       <h2>Comments</h2>
-      <form>
-        <textarea id="commentBox" name="commentBox" rows="4" cols="60" placeholder="Leave a comment about this stream..."></textarea>
+      <form action="#" method="post">
+        <textarea id="commentBox" name="commentBox" rows="4" cols="60" placeholder="Leave a comment about this stream..." title="Comment text box"></textarea>
         <br>
         <button type="submit">Post Comment</button>
       </form>
 
-      <!-- Placeholder for future comments -->
       <div id="commentList">
         <p>No comments yet. Be the first to share your thoughts!</p>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer>
     <p><a href="purple_harvest.html">Back to Home</a></p>
   </footer>
