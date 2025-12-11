@@ -202,4 +202,22 @@ footer a:hover {
   from { opacity: 1; }
   to { opacity: 0; }
 }
+.clear-btn {
+  background-color: #800080;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  box-shadow: 0 0 8px #9400D3, 0 0 15px #9400D3;
+  transition: all 0.3s ease;
+}
+
+.clear-btn:hover {
+  background-color: #b300ff;
+  box-shadow: 0 0 12px #b300ff, 0 0 25px #b300ff;
+  transform: scale(1.05);
+}
 
