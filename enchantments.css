@@ -270,4 +270,24 @@ footer a:hover {
   from { box-shadow: 0 0 10px #9400D3, 0 0 20px #b300ff; }
   to { box-shadow: 0 0 20px #b300ff, 0 0 40px #9400D3; }
 }
+.stream-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.offline-message {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 620px;   /* match iframe width */
+  height: 378px;  /* match iframe height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 1.2em;
+  text-align: center;
+  pointer-events: none; /* lets clicks pass through to iframe if live */
+}
 
