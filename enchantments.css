@@ -14,7 +14,10 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; 
+  z-index: -1;
+  background: black;
+}
+
 
 h1, h2, h3 {
   font-family: 'Wendy One', sans-serif;
@@ -267,24 +270,4 @@ footer a:hover {
   from { box-shadow: 0 0 10px #9400D3, 0 0 20px #b300ff; }
   to { box-shadow: 0 0 20px #b300ff, 0 0 40px #9400D3; }
 }
-/* === Starry Background === */
-body {
-  background: black;
-  overflow: hidden; /* prevents scrollbars from stars */
-}
-
-.star {
-  position: absolute;
-  width: 2px;
-  height: 2px;
-  background: white;
-  border-radius: 50%;
-  animation: twinkle 2s infinite alternate;
-}
-
-@keyframes twinkle {
-  from { opacity: 0.2; }
-  to { opacity: 1; }
-}
-
 
