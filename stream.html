@@ -9,24 +9,41 @@
 <body>
   <header>
     <h1>CRYSTAL VISIONS</h1>
-    <h3>Use the crystal ball to see the past and present tales of SpectoG27, the crystal ball lacks enchantments of foresight sadly so you cannot see the future.</h3>
+    <h3>
+      Use the crystal ball to see the past and present tales of SpectoG27, 
+      the crystal ball lacks enchantments of foresight sadly so you cannot see the future.
+    </h3>
   </header>
 
-<iframe
-  src="https://player.twitch.tv/?channel=spectog27&parent=lgraham27.github.io"
-  frameborder="0"
-  allowfullscreen
-  scrolling="no"
-  height="378"
-  width="620"
-  title="SpectoG27 Twitch Stream">
-</iframe>
+  <main>
+    <section id="stream" class="mystic-frame">
+      <h2>Live Stream</h2>
+      <p>Catch my streams right here without leaving the site!</p>
 
+      <!-- Twitch Embed with Fallback -->
+      <div class="stream-wrapper">
+        <iframe
+          src="https://player.twitch.tv/?channel=spectog27&parent=lgraham27.github.io"
+          frameborder="0"
+          allowfullscreen
+          scrolling="no"
+          height="378"
+          width="620"
+          title="SpectoG27 Twitch Stream">
+        </iframe>
+
+        <!-- Offline Message -->
+        <div class="offline-message">
+          <p>⚡ Specto is currently offline. Check back soon!</p>
+        </div>
+      </div>
+    </section>
 
     <section id="comments">
       <h2>Comments</h2>
       <form action="#" method="post">
-        <textarea id="commentBox" name="commentBox" rows="4" cols="60" placeholder="Leave a comment about this stream..." title="Comment text box"></textarea>
+        <textarea id="commentBox" name="commentBox" rows="4" cols="60"
+          placeholder="Leave a comment about this stream..." title="Comment text box"></textarea>
         <br>
         <button type="submit">Post Comment</button>
       </form>
@@ -37,10 +54,9 @@
     </section>
   </main>
 
-<footer>
-<a href="pages/index.html">Back to Home</a>
-
-</footer>
-
+  <footer>
+    <p><a href="index.html">Back to Home</a></p>
+    <p>&copy; 2025 Purple Harvest | Built by SpectoG27</p>
+  </footer>
 </body>
 </html>
