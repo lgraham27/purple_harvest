@@ -7,35 +7,65 @@
   <link rel="stylesheet" href="enchantments.css">
 </head>
 <body>
+  <!-- Starry Background -->
+  <canvas id="stars"></canvas>
+
+  <!-- Header / Branding -->
   <header class="mystic-frame">
     <h1>WELCOME TO THE BREW</h1>
     <h3>
-      Stir up an enchanting conversation, any kind of your desire but be weary of adding harmful ingredients. 
+      Stir up an enchanting conversation, any kind of your desire but be weary of adding harmful ingredients.  
       The outcome will not sate your needs.
     </h3>
   </header>
 
-  <main>
-    <section id="forum" class="mystic-frame">
-      <h2>Create Post</h2>
-      <hr class="mystic-divider">
-      <form action="#" method="post">
-        <textarea id="postContent" name="postContent" maxlength="270" rows="5" cols="50"
-          placeholder="Write your post here (max 270 characters)..." title="Forum post text box"></textarea>
-        <br>
-        <button type="submit">Create Post</button>
-      </form>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="stream.html">Live Stream</a></li>
+      <li><a href="videos.html">Videos</a></li>
+      <li><a href="community.html">Community</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="discord.html">Discord</a></li>
+    </ul>
+  </nav>
 
-      <!-- Posts will appear here -->
-      <div id="postList">
-        <p class="motto">“The cauldron is quiet… be the first to stir the brew.”</p>
-      </div>
+  <!-- Community Section -->
+  <main>
+    <section id="community" class="centered-content">
+      <h2>Community</h2>
+      <p>Join the Warlocks and share your thoughts!</p>
+
+      <!-- Forum Section -->
+      <section id="forum" class="mystic-frame">
+        <h2>Create Post</h2>
+        <hr class="mystic-divider">
+        <form action="#" method="post">
+          <textarea id="postContent" name="postContent" maxlength="270" rows="5" cols="50"
+            placeholder="Write your post here (max 270 characters)..." title="Forum post text box"></textarea>
+          <br>
+          <button type="submit">Create Post</button>
+        </form>
+
+        <!-- Posts will appear here -->
+        <div id="postList">
+          <p class="motto">“The cauldron is quiet… be the first to stir the brew.”</p>
+        </div>
+      </section>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer>
     <p><a href="index.html">Back to Home</a></p>
+    <p>&copy; 2025 Purple Harvest | Built by SpectoG27</p>
   </footer>
+
+  <!-- Scripts -->
+  <script src="enchantments.js"></script>
 </body>
 </html>
+
 
