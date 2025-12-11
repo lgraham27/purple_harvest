@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Purple Harvest</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Header / Branding -->
@@ -12,18 +13,16 @@
     <p>Welcome Warlocks! Home of Specto’s community.</p>
   </header>
 
-<nav>
-  <ul>
-    <li><button onclick="location.href='about.html'">About Me</button></li>
-    <li><button onclick="location.href='stream.html'">Live Stream</button></li>
-    <li><button onclick="location.href='videos.html'">Videos</button></li>
-    <li><button onclick="location.href='community.html'">Community</button></li>
-    <li><button onclick="location.href='contact.html'">Contact</button></li>
-    <li><button onclick="location.href='discord.html'">Discord</button></li>
-  </ul>
-</nav>
-
-
+  <nav>
+    <ul>
+      <li><button onclick="location.href='about.html'">About Me</button></li>
+      <li><button onclick="location.href='stream.html'">Live Stream</button></li>
+      <li><button onclick="location.href='videos.html'">Videos</button></li>
+      <li><button onclick="location.href='community.html'">Community</button></li>
+      <li><button onclick="location.href='contact.html'">Contact</button></li>
+      <li><button onclick="location.href='discord.html'">Discord</button></li>
+    </ul>
+  </nav>
 
   <section id="about">
     <h2>Who Am I?</h2>
@@ -36,10 +35,11 @@
     <iframe
       src="https://player.twitch.tv/?channel=spectog27&parent=localhost"
       frameborder="0"
-      allowfullscreen="true"
+      allowfullscreen
       scrolling="no"
       height="378"
-      width="620">
+      width="620"
+      title="SpectoG27 Twitch Stream">
     </iframe>
   </section>
 
@@ -47,25 +47,33 @@
   <section id="videos">
     <h2>Past Videos</h2>
     <p>Archived streams and highlights.</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID"
-<iframe width="560" height="315"
+    <div class="video-slot">
+      <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/VIDEO_ID"
+        frameborder="0"
+        allowfullscreen
+        title="SpectoG27 Video 1">
+      </iframe>
+    </div>
+    <div class="video-slot">
+      <iframe width="560" height="315"
         src="https://www.youtube.com/embed/abcd1234"
         frameborder="0"
-        allowfullscreen>
-</iframe>
-
+        allowfullscreen
+        title="SpectoG27 Video 2">
+      </iframe>
+    </div>
   </section>
 
   <!-- Community Section -->
   <section id="community">
     <h2>Community</h2>
- 
   </section>
 
   <!-- Contact Section -->
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:lgraham2798@gmail.com">lgraham2798@gmail.com</a></p>
+    <p>Email: <a href="mailto:lgraham2798@gmail.com">Summon Specto G</a></p>
     <p>Phone: 1-800-Warlock</p>
   </section>
 
