@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Wendy+One&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL1MQwaQetVlHM1Wrxk8JVKBX2EC-OkMMo-A&s') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+h1, h2, h3 {
+  font-family: 'Wendy One', sans-serif;
+  font-weight: bold;
+  color: #9400D3;
+  text-align: center;
+  margin-top: 20px;
+  text-shadow: 0 0 10px #9400D3, 0 0 20px #9400D3, 0 0 30px #b300ff;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav button, nav a {
+  background-color: #9400D3;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #9400D3, 0 0 20px #9400D3;
+  transition: all 0.3s ease;
+}
+
+nav button:hover, nav a:hover {
+  background-color: #b300ff;
+  box-shadow: 0 0 15px #b300ff, 0 0 30px #b300ff;
+}
+
+section {
+  margin: 30px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+section h2 {
+  color: white;
+  text-shadow: 0 0 5px #9400D3;
+}
+
+textarea {
+  width: 90%;
+  max-width: 600px;
+  background-color: white;
+  color: black;
+  border: 2px solid #9400D3;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+  resize: none;
+  box-shadow: 0 0 5px #9400D3;
+}
+
+form button {
+  background-color: #9400D3;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #9400D3, 0 0 20px #9400D3;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background-color: #b300ff;
+  box-shadow: 0 0 15px #b300ff, 0 0 30px #b300ff;
+}
+
+footer {
+  text-align: center;
+  margin: 40px 0;
+  color: white;
+}
+
+footer a {
+  color: #9400D3;
+  text-decoration: none;
+  text-shadow: 0 0 5px #9400D3;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #b300ff;
+}
