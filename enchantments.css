@@ -220,4 +220,34 @@ footer a:hover {
   box-shadow: 0 0 12px #b300ff, 0 0 25px #b300ff;
   transform: scale(1.05);
 }
+.mystic-frame {
+  border: 2px solid #9400D3;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px #9400D3, 0 0 30px #b300ff;
+  background: rgba(20, 0, 40, 0.6);
+  animation: auraPulse 4s infinite alternate;
+}
+/* === Mystical About Me Enhancements === */
+
+.mystic-divider {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #9400D3, transparent);
+  margin: 20px auto;
+  width: 60%;
+  box-shadow: 0 0 10px #b300ff;
+}
+
+.motto {
+  font-style: italic;
+  color: #b300ff;
+  text-shadow: 0 0 10px #9400D3, 0 0 20px #b300ff;
+}
+
+@keyframes auraPulse {
+  from { box-shadow: 0 0 10px #9400D3, 0 0 20px #b300ff; }
+  to { box-shadow: 0 0 20px #b300ff, 0 0 40px #9400D3; }
+}
+
 
