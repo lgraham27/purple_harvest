@@ -7,32 +7,38 @@
   <link rel="stylesheet" href="enchantments.css">
 </head>
 <body>
+  <!-- Starry Background -->
+  <canvas id="stars"></canvas>
+
   <!-- Header / Branding -->
   <header>
     <h1>Purple Harvest</h1>
   </header>
 
+  <!-- Navigation -->
   <nav>
     <ul>
-      <li><button onclick="location.href='about.html'">About Me</button></li>
-      <li><button onclick="location.href='stream.html'">Live Stream</button></li>
-      <li><button onclick="location.href='videos.html'">Videos</button></li>
-      <li><button onclick="location.href='community.html'">Community</button></li>
-      <li><button onclick="location.href='contact.html'">Contact</button></li>
-      <li><button onclick="location.href='discord.html'">Discord</button></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="stream.html">Live Stream</a></li>
+      <li><a href="videos.html">Videos</a></li>
+      <li><a href="community.html">Community</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="discord.html">Discord</a></li>
     </ul>
   </nav>
 
+  <!-- About Section -->
   <section id="about">
     <h2>Who Am I?</h2>
     <p>My name is Lateef Graham (Specto). I’m a CS major, gamer, and streamer. Purple Harvest is my way of connecting with my Warlocks community.</p>
   </section>
 
+  <!-- Stream Section -->
   <section id="stream">
     <h2>Live Stream</h2>
     <p>Catch my streams right here without leaving the site!</p>
     <iframe
-      src="https://player.twitch.tv/?channel=spectog27&parent=localhost"
+      src="https://player.twitch.tv/?channel=spectog27&parent=spectog27.github.io"
       frameborder="0"
       allowfullscreen
       scrolling="no"
@@ -80,5 +86,9 @@
   <footer>
     <p>&copy; 2025 Purple Harvest | Built by SpectoG27</p>
   </footer>
+
+  <!-- Scripts -->
+  <script src="enchantments.js"></script>
 </body>
 </html>
+
