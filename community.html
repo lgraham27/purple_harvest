@@ -7,19 +7,29 @@
   <link rel="stylesheet" href="enchantments.css">
 </head>
 <body>
-  <header>
+  <header class="mystic-frame">
     <h1>WELCOME TO THE BREW</h1>
-    <h3>Stir up an enchanting conversation, any kind of your desire but be weary of adding harmful ingredients. The outcome will not sate your needs.</h3>
+    <h3>
+      Stir up an enchanting conversation, any kind of your desire but be weary of adding harmful ingredients. 
+      The outcome will not sate your needs.
+    </h3>
   </header>
 
   <main>
-    <section id="forum">
+    <section id="forum" class="mystic-frame">
       <h2>Create Post</h2>
+      <hr class="mystic-divider">
       <form action="#" method="post">
-        <textarea id="postContent" name="postContent" maxlength="270" rows="5" cols="50" placeholder="Write your post here (max 270 characters)..." title="Forum post text box"></textarea>
+        <textarea id="postContent" name="postContent" maxlength="270" rows="5" cols="50"
+          placeholder="Write your post here (max 270 characters)..." title="Forum post text box"></textarea>
         <br>
         <button type="submit">Create Post</button>
       </form>
+
+      <!-- Posts will appear here -->
+      <div id="postList">
+        <p class="motto">“The cauldron is quiet… be the first to stir the brew.”</p>
+      </div>
     </section>
   </main>
 
