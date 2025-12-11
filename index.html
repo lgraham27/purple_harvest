@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Purple Harvest</title>
+  <title>Purple Harvest - Live Stream</title>
   <link rel="stylesheet" href="enchantments.css">
 </head>
 <body>
@@ -18,6 +18,7 @@
   <!-- Navigation -->
   <nav>
     <ul>
+      <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Me</a></li>
       <li><a href="stream.html">Live Stream</a></li>
       <li><a href="videos.html">Videos</a></li>
@@ -27,63 +28,38 @@
     </ul>
   </nav>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>Who Am I?</h2>
-    <p>My name is Lateef Graham (Specto). I’m a CS major, gamer, and streamer. Purple Harvest is my way of connecting with my Warlocks community.</p>
-  </section>
-
   <!-- Stream Section -->
-  <section id="stream">
-    <h2>Live Stream</h2>
-    <p>Catch my streams right here without leaving the site!</p>
-    <iframe
-      src="https://player.twitch.tv/?channel=spectog27&parent=spectog27.github.io"
-      frameborder="0"
-      allowfullscreen
-      scrolling="no"
-      height="378"
-      width="620"
-      title="SpectoG27 Twitch Stream">
-    </iframe>
-  </section>
-
-  <!-- Videos Section -->
-  <section id="videos">
-    <h2>Past Videos</h2>
-    <p>Archived streams and highlights.</p>
-    <div class="video-slot">
-      <iframe width="560" height="315"
-        src="https://www.youtube.com/embed/VIDEO_ID"
+  <main>
+    <section id="stream" class="mystic-frame">
+      <h2>Live Stream</h2>
+      <p>Catch my streams right here without leaving the site!</p>
+      <iframe
+        src="https://player.twitch.tv/?channel=spectog27&parent=spectog27.github.io"
         frameborder="0"
         allowfullscreen
-        title="SpectoG27 Video 1">
+        scrolling="no"
+        height="378"
+        width="620"
+        title="SpectoG27 Twitch Stream">
       </iframe>
-    </div>
-    <div class="video-slot">
-      <iframe width="560" height="315"
-        src="https://www.youtube.com/embed/abcd1234"
-        frameborder="0"
-        allowfullscreen
-        title="SpectoG27 Video 2">
-      </iframe>
-    </div>
-  </section>
 
-  <!-- Community Section -->
-  <section id="community">
-    <h2>Community</h2>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:lgraham2798@gmail.com">Summon Specto G</a></p>
-    <p>Phone: 1-800-Warlock</p>
-  </section>
+      <!-- Comments Section -->
+      <section id="comments">
+        <h3>Community Chat</h3>
+        <form>
+          <textarea id="commentBox" rows="4" cols="50" placeholder="Leave a comment..."></textarea><br>
+          <button type="submit">Post Comment</button>
+        </form>
+        <div id="commentList">
+          <p>No comments yet. Be the first!</p>
+        </div>
+      </section>
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer>
+    <p><a href="index.html">Back to Home</a></p>
     <p>&copy; 2025 Purple Harvest | Built by SpectoG27</p>
   </footer>
 
